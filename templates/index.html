@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Natural Gas Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+  body {
+    background-image: url('https://investingnews.com/media-library/gas-stove-and-world-map.jpg?id=33355687&width=1200&height=800&quality=85&coordinates=0%2C0%2C0%2C1'); /* Add the URL of your background image here */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    color: #333333;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.content {
+    background: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background for better readability */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+</style>
+<body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-2">
+        <div class="container">
+          <a class="navbar-brand" style="font-size: 22px; color:white;" href="/">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" style="font-size: 22px; color:white;" href="/dataset">Dataset</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 22px; color:white;" href="/businessv">Business Values</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 22px; color:white;" href="/algused">Algorithm Used</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 22px; color:white;" href="/prediction">NG Prediction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 22px; color:white;" href="/visualization">Visualization</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="content" style='background:black;'>
+        <h1 style="color:white;">Abstract</h1>
+        <p style="color:white; font-size: 18px;"><strong>The "Natural Gas Price Prediction" project employs the Random Forest machine learning algorithm to develop a predictive model for forecasting natural gas prices based on historical data. The user-friendly interface enables users to input a specific date, and the system provides a predicted natural gas price for that date, facilitating informed decision-making for energy traders, investors, and policy-makers. The project's emphasis on transparency is evident through the display of team information, fostering collaboration and recognition. By offering a practical and accessible tool for anticipating natural gas price movements, this project not only addresses the needs of financial decision-makers but also underscores the potential of machine learning applications in forecasting within the dynamic energy market.</p>
+    </div>
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 

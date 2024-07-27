@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Natural Gas Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+  body {
+    background-image: url('https://investingnews.com/media-library/gas-stove-and-world-map.jpg?id=33355687&width=1200&height=800&quality=85&coordinates=0%2C0%2C0%2C1'); /* Add the URL of your background image here */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    color: #333333;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:black;
+}
+p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color:black;
+}
+.content {
+    background: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background for better readability */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+</style>
+<body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-2">
+        <div class="container">
+          <a class="navbar-brand" style="font-size: 22px; color:white;" href="/">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" style="font-size: 22px; color:white;" href="/dataset">Dataset</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 22px; color:white;" href="/businessv">Business Values</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 22px; color:white;" href="/algused">Algorithm Used</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 22px; color:white;" href="/prediction">NG Prediction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 22px; color:white;" href="/visualization">Visualization</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="content" style='background:white;'>
+        <h1>LSTM Networks</h1>
+          <p>Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter & Schmidhuber (1997), and were refined and popularized by many people in following work.1 They work tremendously well on a large variety of problems, and are now widely used.</p>
+          
+          <p>LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior, not something they struggle to learn!</p>
+          
+          <p>All recurrent neural networks have the form of a chain of repeating modules of neural network. In standard RNNs, this repeating module will have a very simple structure, such as a single tanh layer.</p>   
+        </div>
+          <br></br>
+          <div class="content" style='background:white;'>
+          <img src="/static/LSTM3-SimpleRNN.png" width="100%" height="500px" frameborder="0"></img>
+          <br></br>
+        </div>
+        <br></br>
+          <div class="content" style='background:white;'>
+          <p>LSTMs also have this chain like structure, but the repeating module has a different structure. Instead of having a single neural network layer, there are four, interacting in a very special way.</p>
+          <br></br>
+          <img src="/static/LSTM3-chain.png" width="100%" height="500px" frameborder="0"></img>
+          <br></br>
+
+        </div>
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 
